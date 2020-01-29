@@ -1,16 +1,16 @@
 <?php
 
-namespace Spatie\Activitylog\Traits;
+namespace darkraul79\Activitylog\Traits;
 
-use Spatie\Activitylog\ActivitylogServiceProvider;
+use darkraul79\Activitylog\ActivitylogServiceProvider;
 use Illuminate\Database\Eloquent\Relations\MorphMany;
 
 trait HasActivity
 {
-    use LogsActivity;
+	use LogsActivity;
 
-    public function actions(): MorphMany
-    {
-        return $this->morphMany(ActivitylogServiceProvider::determineActivityModel(), 'causer');
-    }
+	public function actions(): MorphMany
+	{
+		return $this->morphMany(ActivitylogServiceProvider::determineActivityModel(), 'causer');
+	}
 }

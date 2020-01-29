@@ -23,7 +23,7 @@
 	},
 	"autoload": {
 		"psr-4": {
-			"Spatie\\Activitylog\\": "src"
+			"darkraul79\\Activitylog\\": "src"
 		},
 		"files": [
 			"src/helpers.php"
@@ -31,7 +31,7 @@
 	},
 	"autoload-dev": {
 		"psr-4": {
-			"Spatie\\Activitylog\\Test\\": "tests"
+			"darkraul79\\Activitylog\\Test\\": "tests"
 		}
 	},
 	"scripts": {
@@ -41,8 +41,14 @@
 	"extra": {
 		"laravel": {
 			"providers": [
-				"Spatie\\Activitylog\\ActivitylogServiceProvider"
+				"darkraul79\\Activitylog\\ActivitylogServiceProvider"
 			]
 		}
-	}
+	},
+	"repositories": [
+		{
+			"type": "vcs",
+			"url": "git@github.com:darkraul79/laravel-activitylog.git"
+		}
+	]
 }

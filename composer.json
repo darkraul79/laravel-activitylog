@@ -38,13 +38,6 @@
 		"test": "vendor/bin/phpunit"
 	},
 	"license": "MIT",
-	"extra": {
-		"laravel": {
-			"providers": [
-				"darkraul79\\Activitylog\\ActivitylogServiceProvider"
-			]
-		}
-	},
 	"repositories": [
 		{
 			"type": "vcs",

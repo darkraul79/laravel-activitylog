@@ -1,12 +1,12 @@
 # Log activity inside your Laravel app
 
-[![Latest Version on Packagist](https://img.shields.io/packagist/v/spatie/laravel-activitylog.svg?style=flat-square)](https://packagist.org/packages/spatie/laravel-activitylog)
-[![Build Status](https://img.shields.io/travis/spatie/laravel-activitylog/master.svg?style=flat-square)](https://travis-ci.org/spatie/laravel-activitylog)
-[![Quality Score](https://img.shields.io/scrutinizer/g/spatie/laravel-activitylog.svg?style=flat-square)](https://scrutinizer-ci.com/g/spatie/laravel-activitylog)
+[![Latest Version on Packagist](https://img.shields.io/packagist/v/Darkraul79/laravel-activitylog.svg?style=flat-square)](https://packagist.org/packages/Darkraul79/laravel-activitylog)
+[![Build Status](https://img.shields.io/travis/Darkraul79/laravel-activitylog/master.svg?style=flat-square)](https://travis-ci.org/Darkraul79/laravel-activitylog)
+[![Quality Score](https://img.shields.io/scrutinizer/g/Darkraul79/laravel-activitylog.svg?style=flat-square)](https://scrutinizer-ci.com/g/Darkraul79/laravel-activitylog)
 [![StyleCI](https://styleci.io/repos/61802818/shield)](https://styleci.io/repos/61802818)
-[![Total Downloads](https://img.shields.io/packagist/dt/spatie/laravel-activitylog.svg?style=flat-square)](https://packagist.org/packages/spatie/laravel-activitylog)
+[![Total Downloads](https://img.shields.io/packagist/dt/Darkraul79/laravel-activitylog.svg?style=flat-square)](https://packagist.org/packages/Darkraul79/laravel-activitylog)
 
-The `spatie/laravel-activitylog` package provides easy to use functions to log the activities of the users of your app. It can also automatically log model events. 
+The `Darkraul79/laravel-activitylog` package provides easy to use functions to log the activities of the users of your app. It can also automatically log model events. 
 The Package stores all activity in the `activity_log` table.
 
 Here's a demo of how you can use it:
@@ -15,7 +15,7 @@ Here's a demo of how you can use it:
 activity()->log('Look, I logged something');
 ```
 
-You can retrieve all activity using the `Spatie\Activitylog\Models\Activity` model.
+You can retrieve all activity using the `Darkraul79\Activitylog\Models\Activity` model.
 
 ```php
 Activity::all();
@@ -38,7 +38,7 @@ $lastLoggedActivity->description; //returns 'Look, I logged something'
 ```
 
 
-Here's an example on [event logging](https://docs.spatie.be/laravel-activitylog/v2/advanced-usage/logging-model-events).
+Here's an example on [event logging](https://docs.Darkraul79.be/laravel-activitylog/v2/advanced-usage/logging-model-events).
 
 ```php
 $newsItem->name = 'updated name';
@@ -68,11 +68,11 @@ Calling `$activity->changes()` will return this array:
 
 
 ## Documentation
-You'll find the documentation on [https://docs.spatie.be/laravel-activitylog/v2](https://docs.spatie.be/laravel-activitylog/v2).
+You'll find the documentation on [https://docs.Darkraul79.be/laravel-activitylog/v2](https://docs.Darkraul79.be/laravel-activitylog/v2).
 
-Find yourself stuck using the package? Found a bug? Do you have general questions or suggestions for improving the activity log? Feel free to [create an issue on GitHub](https://github.com/spatie/laravel-activitylog/issues), we'll try to address it as soon as possible.
+Find yourself stuck using the package? Found a bug? Do you have general questions or suggestions for improving the activity log? Feel free to [create an issue on GitHub](https://github.com/Darkraul79/laravel-activitylog/issues), we'll try to address it as soon as possible.
 
-If you've found a security issue please mail [freek@spatie.be](mailto:freek@spatie.be) instead of using the issue tracker.
+If you've found a security issue please mail [freek@Darkraul79.be](mailto:freek@Darkraul79.be) instead of using the issue tracker.
 
 
 ## Installation
@@ -80,14 +80,14 @@ If you've found a security issue please mail [freek@spatie.be](mailto:freek@spat
 You can install the package via composer:
 
 ``` bash
-composer require spatie/laravel-activitylog
+composer require Darkraul79/laravel-activitylog
 ```
 
 The package will automatically register itself.
 
 You can publish the migration with:
 ```bash
-php artisan vendor:publish --provider="Spatie\Activitylog\ActivitylogServiceProvider" --tag="migrations"
+php artisan vendor:publish --provider="Darkraul79\Activitylog\ActivitylogServiceProvider" --tag="migrations"
 ```
 
 *Note*: The default migration assumes you are using integers for your model IDs. If you are using UUIDs, or some other format, adjust the format of the subject_id and causer_id fields in the published migration before continuing.
@@ -101,7 +101,7 @@ php artisan migrate
 
 You can optionally publish the config file with:
 ```bash
-php artisan vendor:publish --provider="Spatie\Activitylog\ActivitylogServiceProvider" --tag="config"
+php artisan vendor:publish --provider="Darkraul79\Activitylog\ActivitylogServiceProvider" --tag="config"
 ```
 
 This is the contents of the published config file:
@@ -139,9 +139,9 @@ return [
 
     /*
      * This model will be used to log activity. The only requirement is that
-     * it should be or extend the Spatie\Activitylog\Models\Activity model.
+     * it should be or extend the Darkraul79\Activitylog\Models\Activity model.
      */
-    'activity_model' => \Spatie\Activitylog\Models\Activity::class,
+    'activity_model' => \Darkraul79\Activitylog\Models\Activity::class,
     
     /*
      * This is the name of the table that will be created by the migration and
@@ -168,15 +168,15 @@ Please see [CONTRIBUTING](CONTRIBUTING.md) for details.
 
 ## Security
 
-If you discover any security related issues, please email freek@spatie.be instead of using the issue tracker.
+If you discover any security related issues, please email freek@Darkraul79.be instead of using the issue tracker.
 
 ## Postcardware
 
 You're free to use this package, but if it makes it to your production environment we highly appreciate you sending us a postcard from your hometown, mentioning which of our package(s) you are using.
 
-Our address is: Spatie, Samberstraat 69D, 2060 Antwerp, Belgium.
+Our address is: Darkraul79, Samberstraat 69D, 2060 Antwerp, Belgium.
 
-We publish all received postcards [on our company website](https://spatie.be/en/opensource/postcards).
+We publish all received postcards [on our company website](https://Darkraul79.be/en/opensource/postcards).
 
 ## Credits
 
@@ -186,9 +186,9 @@ We publish all received postcards [on our company website](https://spatie.be/en/
 
 ## Support us
 
-Spatie is a webdesign agency based in Antwerp, Belgium. You'll find an overview of all our open source projects [on our website](https://spatie.be/opensource).
+Darkraul79 is a webdesign agency based in Antwerp, Belgium. You'll find an overview of all our open source projects [on our website](https://Darkraul79.be/opensource).
 
-Does your business depend on our contributions? Reach out and support us on [Patreon](https://www.patreon.com/spatie). 
+Does your business depend on our contributions? Reach out and support us on [Patreon](https://www.patreon.com/Darkraul79). 
 All pledges will be dedicated to allocating workforce on maintenance and new awesome stuff.
 
 ## License

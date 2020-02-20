@@ -1,12 +1,12 @@
 <?php
 
-namespace darkraul79\Activitylog\Traits;
+namespace Darkraul79\Activitylog\Traits;
 
 use Illuminate\Support\Collection;
-use darkraul79\Activitylog\ActivityLogger;
+use Darkraul79\Activitylog\ActivityLogger;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\SoftDeletes;
-use darkraul79\Activitylog\ActivitylogServiceProvider;
+use Darkraul79\Activitylog\ActivitylogServiceProvider;
 use Illuminate\Database\Eloquent\Relations\MorphMany;
 
 trait LogsActivity

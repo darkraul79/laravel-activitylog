@@ -1,6 +1,6 @@
 <?php
 
-namespace darkraul79\Activitylog\Exceptions;
+namespace Darkraul79\Activitylog\Exceptions;
 
 use Exception;
 

@@ -1,6 +1,6 @@
 <?php
 
-namespace darkraul79\Activitylog;
+namespace Darkraul79\Activitylog;
 
 use Illuminate\Config\Repository;
 

@@ -1,9 +1,9 @@
 <?php
 
-namespace darkraul79\Activitylog\Traits;
+namespace Darkraul79\Activitylog\Traits;
 
 use Illuminate\Database\Eloquent\Model;
-use darkraul79\Activitylog\Exceptions\CouldNotLogChanges;
+use Darkraul79\Activitylog\Exceptions\CouldNotLogChanges;
 
 trait DetectsChanges
 {

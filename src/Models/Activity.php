@@ -1,6 +1,6 @@
 <?php
 
-namespace darkraul79\Activitylog\Models;
+namespace Darkraul79\Activitylog\Models;
 
 use Illuminate\Support\Collection;
 use Illuminate\Database\Eloquent\Model;
@@ -9,7 +9,8 @@ use Illuminate\Database\Eloquent\Relations\MorphTo;
 
 class Activity extends Model
 {
-	protected $table = 'activities';
+	// protected $table = 'activities';
+	protected $table;
 	public $timestamps = false;
 
 	public $guarded = [];
@@ -17,6 +18,11 @@ class Activity extends Model
 	protected $casts = [
 		'properties' => 'collection',
 	];
+
+	public function __construct()
+	{
+		$this->table = config('activitylog.database_connection');
+	}
 
 	public function subject(): MorphTo
 	{

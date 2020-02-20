@@ -1,21 +1,20 @@
 {
 	"name": "darkraul79/laravel-activitylog",
-	"description": "Para LoeweCampus",
-	"homepage": "https://github.com/darkraul79/laravel-activitylog",
-	"keywords": [],
-	"authors": [
-		{
-			"name": "Raul Sebastian",
-			"email": "darkraul@gmail.com",
-			"role": "Developer"
-		}
-	],
+	"description": "A very simple activity logger to monitor the users of your website or application",
+	,
+	"authors": [{
+		"name": "Raul",
+		"email": "freek@Darkraul79.be",
+		"homepage": "https://Darkraul79.be",
+		"role": "Developer"
+	}],
 	"require": {
 		"php": "^7.0",
 		"illuminate/config": "~5.5.0|~5.6.0|~5.7.0",
 		"illuminate/database": "~5.5.0|~5.6.0|~5.7.0",
 		"illuminate/support": "~5.5.0|~5.6.0|~5.7.0",
-		"spatie/string": "^2.1"
+		"Darkraul79/string": "^2.1"
+
 	},
 	"require-dev": {
 		"phpunit/phpunit": "^6.2|^7.0",
@@ -23,7 +22,7 @@
 	},
 	"autoload": {
 		"psr-4": {
-			"darkraul79\\Activitylog\\": "src"
+			"Darkraul79\\Activitylog\\": "src"
 		},
 		"files": [
 			"src/helpers.php"
@@ -31,17 +30,18 @@
 	},
 	"autoload-dev": {
 		"psr-4": {
-			"darkraul79\\Activitylog\\Test\\": "tests"
+			"Darkraul79\\Activitylog\\Test\\": "tests"
 		}
 	},
 	"scripts": {
 		"test": "vendor/bin/phpunit"
 	},
 	"license": "MIT",
-	"repositories": [
-		{
-			"type": "vcs",
-			"url": "git@github.com:darkraul79/laravel-activitylog.git"
+	"extra": {
+		"laravel": {
+			"providers": [
+				"Darkraul79\\Activitylog\\ActivitylogServiceProvider"
+			]
 		}
-	]
+	}
 }

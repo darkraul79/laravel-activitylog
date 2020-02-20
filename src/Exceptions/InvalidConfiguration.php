@@ -1,9 +1,9 @@
 <?php
 
-namespace darkraul79\Activitylog\Exceptions;
+namespace Darkraul79\Activitylog\Exceptions;
 
 use Exception;
-use darkraul79\Activitylog\Models\Activity;
+use Darkraul79\Activitylog\Models\Activity;
 
 class InvalidConfiguration extends Exception
 {

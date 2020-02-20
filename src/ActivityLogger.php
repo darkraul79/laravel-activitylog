@@ -1,13 +1,13 @@
 <?php
 
-namespace darkraul79\Activitylog;
+namespace Darkraul79\Activitylog;
 
 use Illuminate\Auth\AuthManager;
 use Illuminate\Database\Eloquent\Model;
-use darkraul79\Activitylog\Models\Activity;
+use Darkraul79\Activitylog\Models\Activity;
 use Illuminate\Support\Traits\Macroable;
 use Illuminate\Contracts\Config\Repository;
-use darkraul79\Activitylog\Exceptions\CouldNotLogActivity;
+use Darkraul79\Activitylog\Exceptions\CouldNotLogActivity;
 
 class ActivityLogger
 {
@@ -164,7 +164,7 @@ class ActivityLogger
 	/**
 	 * @param \Illuminate\Database\Eloquent\Model|int|string $modelOrId
 	 *
-	 * @throws \darkraul79\Activitylog\Exceptions\CouldNotLogActivity
+	 * @throws \Darkraul79\Activitylog\Exceptions\CouldNotLogActivity
 	 *
 	 * @return \Illuminate\Database\Eloquent\Model
 	 */

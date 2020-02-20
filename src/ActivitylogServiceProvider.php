@@ -1,11 +1,11 @@
 <?php
 
-namespace darkraul79\Activitylog;
+namespace Darkraul79\Activitylog;
 
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\ServiceProvider;
-use darkraul79\Activitylog\Models\Activity;
-use darkraul79\Activitylog\Exceptions\InvalidConfiguration;
+use Darkraul79\Activitylog\Models\Activity;
+use Darkraul79\Activitylog\Exceptions\InvalidConfiguration;
 
 class ActivitylogServiceProvider extends ServiceProvider
 {

@@ -1,7 +1,7 @@
 {
 	"name": "darkraul79/laravel-activitylog",
 	"description": "A very simple activity logger to monitor the users of your website or application",
-	,
+
 	"authors": [{
 		"name": "Raul",
 		"email": "freek@Darkraul79.be",

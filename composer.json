@@ -1,7 +1,7 @@
 {
 	"name": "darkraul79/laravel-activitylog",
 	"description": "A very simple activity logger to monitor the users of your website or application",
-
+"type":"composer",
 	"authors": [{
 		"name": "Raul",
 		"email": "freek@Darkraul79.be",
@@ -10,9 +10,9 @@
 	}],
 	"require": {
 		"php": "^7.0",
-		"illuminate/config": "~5.5.0|~5.6.0|~5.7.0|^5.8",
-		"illuminate/database": "~5.5.0|~5.6.0|~5.7.0|^5.8",
-		"illuminate/support": "~5.5.0|~5.6.0|~5.7.0|^5.8",
+		"illuminate/config": "^5.8",
+		"illuminate/database": "^6.0",
+		"illuminate/support": "^5.8",
 		"spatie/string": "^2.1"
 
 	},
